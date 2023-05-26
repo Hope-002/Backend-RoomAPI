@@ -22,9 +22,9 @@ namespace API.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Room>> GetRooms(int roomId)
+        public async Task<ActionResult<Room>> GetRooms(int id)
         {
-            return await _roomRepository.Get(roomId);
+            return await _roomRepository.Get(id);
         }
 
         [HttpPost]
